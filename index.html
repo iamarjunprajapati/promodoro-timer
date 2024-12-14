@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promodoro Timer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="body-container h-[100vh] w-full bg-[rgb(242,245,246)] flex justify-center items-center">
+        <div class="timer-container w-[45%] bg-white shadow-xl flex items-center flex-col p-10">
+            <h2 class="text-4xl font-bold mb-10">Promodoro Timer</h2>
+            <h1 class="text-7xl font-semibold mb-10"><span id="display-minutes">25</span> : <span id="display-seconds">00</span></h1>
+            <div class="row">
+                <button class="bg-[green] text-white px-5 py-2 mx-2 rounded" onclick="timer()">START</button> <button
+                    class="bg-[red] text-white px-5 py-2 mx-2 rounded" id="stop">STOP</button> <button
+                    class="bg-[black] text-white px-5 py-2  mx-2 rounded" id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
